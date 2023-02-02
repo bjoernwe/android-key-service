@@ -12,7 +12,7 @@ class AccessibilityKeyDetector : AccessibilityService() {
 
     override fun onKeyEvent(event: KeyEvent?): Boolean {
         if (event != null) {
-            Log.d(TAG, "Key pressed via accessibility is: " + event.keyCode)
+            Log.d(TAG, "Key pressed via accessibility is: $event")
         }
         return true
     }
